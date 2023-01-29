@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div>
+            <h1>Todo List</h1>
+        </div>
+        <section class="input-section">
+            <input type="text" id="new-item" placeholder="Add New-item here"> 
+            <button type="button" value="Add" id="add-item" onclick="addItem()">Add item</button>
+        </section>
+        <section class="task-section">
+            <h2>List</h2>
+            <div class="item-list" id="item-list">
+                    <!-- <div class="item">
+                        <p>Buy new car</p>
+                        <div>
+                            <span onclick="editItem()"><img src="edit.png" alt="edit"></span>
+                            <span onclick="deleteItem()"><img src="delete.png" alt="delete"></span>
+                        </div>
+                    </div> -->
+
+            </div>
+        </section>
+        <button class="delete-all" onclick="deleteAll()">Delete All</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
